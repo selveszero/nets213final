@@ -54,8 +54,13 @@ Difficulty: 3
 
 Drawing conclusions based on the data aggregation on which model is most effective and why, and which hyperparameters improved models quality the most, compare model generated music with the control (human generated music) and determine the distribution of worker preference based on the secondary information we gathered.
 
-### Quality Control: 
+## Quality Control: 
 For quality control, we inputted midi files that were generated from the training models. The output of the quality control component is file paths to the MP3 file. These files contain a music clip that is concatenated with a 2 digit number. This 2 digit number serves as a quality control measure to ensure that the Turker listens until the end. This 2 digit number will also be listed in the output file. Furthermore, the output includes a directory of the file paths to the MP3 files, which will be uploaded to the cloud. The code can be found in 213Project_QC.ipynb notebook. 
 
-### Aggregation: 
+## Aggregation: 
 We found the average rating for each model and outputted this data to a CSV file. The code for this component can be found in the simple_aggregation.ipynb notebook. 
+
+Documents for the flow diagram and the mock up can be found at the following: docs/flow-diagram.pdf, docs/mock_up.png.
+The sample input and output data can be found at data/QC_sample_input.xlsx, data/QC_sample_output.csv, and data/QC_sample_output.xlsx.
+Sample input for aggregation can be found at: data/simple_aggregation.xlsx
+
