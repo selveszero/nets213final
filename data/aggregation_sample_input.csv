@@ -1,0 +1,11 @@
+music_url,model,rating,age,hours_per_week
+song1,model_one,1,18,5
+song2,model_one,2,18,5
+song3,model_one,3,18,5
+song4,model_one,4,18,5
+song5,model_one,5,18,5
+song6,model_two,2,18,5
+song7,model_two,3,18,5
+song8,model_two,4,18,5
+song9,model_two,5,18,5
+song10,model_two,6,18,5
