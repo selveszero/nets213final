@@ -39,7 +39,7 @@ Difficulty: 3
 Drawing conclusions based on the data aggregation on he distribution of the quality of music clips and  determine the distribution of worker preference based on the secondary information we gathered. We will create and rate 30 songs produced by the model that are of the same length as the final iterative model and were createwd in one-go. Finally we will compare iteratively generated music with one-go generated music.
 
 ## How to Use Noteworthy
-Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: https://workersandbox.mturk.com/projects/3R3SP2PP0QZCWZ9PLHJQ1YCOEH88PD/tasks?ref=w_pl_prvw.
+Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: https://workersandbox.mturk.com/projects/3TCGLRK80L0CG7BRUKYSENZ2INWZQX/tasks?ref=w_pl_prvw.
 
 Noteworthy asks students to listen to two music recordings and rate if these recordings should be concatenated. 
 
