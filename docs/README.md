@@ -48,14 +48,14 @@ Select the best model based on the aggregated ratings
 
 Use multiple instances of the best model with different hyperparameters (or different training data) to generate music which will go through the rating and aggregation processes again to determine the final best model with a certain set of parameters/hyperparameters.
 
-## Analysis
+## Analysis 
 
 Difficulty: 3
 
 Drawing conclusions based on the data aggregation on which model is most effective and why, and which hyperparameters improved models quality the most, compare model generated music with the control (human generated music) and determine the distribution of worker preference based on the secondary information we gathered.
 
 ## How to Use Noteworthy
-Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: https://workersandbox.mturk.com/projects/3TCGLRK80L0CG7BRUKYSENZ2INWZQX/tasks?ref=w_pl_prvw.
+Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: https://workersandbox.mturk.com/projects/3TCGLRK80L0CG7BRUKYSENZ2INWZQX/tasks?ref=w_pl_prvw
 
 Noteworthy asks students to listen to two music recordings and rate if these recordings should be concatenated. The instructions at the top of the screen ask the student to listen to the original music selection, the primer, in its entirety. We understand that this recording may be long, thus, when listening to the second recording, so we have included the last 15 seconds of the original music to the new recording. After listening to this recording, the student must rate from 1 to 5 (5 being the best) how well the new recording fits with the original. 
 
