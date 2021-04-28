@@ -96,13 +96,13 @@ After running the HITs and aggregation, we will get the best music of this itera
 
 For analysis, we will compare this iterative method with 2 other methods for extending the primer using the same generative model, one with the help of the crowd but no iteration, the other without the help of the crowd. 
 
-Say if we want the final generated music to be 2 minutes long, with a 10s primer and 110s of generated music. 
+Say if we want the final generated music to be a little over 2 minutes long, with 8s of primer and 120s of machine generated music. 
 
-The iterative method will generate, for example, 15 samples containing 10s after the primer per iteration for 11 iterations, and in each iteration the crowd will select the best sample out of the 15 to be the primer for the next iteration. 
+The iterative method will generate, for example, 15 samples each containing the primer and 15s after the primer per iteration for 8 iterations, and in each iteration the crowd will select the best music out of the 15 samples to be the primer for the next iteration. 
 
-The method with the help of the crowd but no iteration will generate, 15 samples containing 110s after the primer. The crowd will select the best sample out of the 15. 
+The method with the help of the crowd but no iteration will generate, 15 samples each containing the primer and 120s after the primer. The crowd will select the best sample out of the 15. 
 
-The last method with no help of the crowd will generate 1 sample containing 110s after the primer directly.
+The last method with no help of the crowd will generate 1 sample containing the primer and 120s after the primer directly.
 
 Then, we will use the crowd for a final round of comparison where they rate the best sample of each method, and we expect the iterative method to perform better than the others.
 
