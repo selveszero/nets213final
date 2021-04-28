@@ -74,8 +74,7 @@ Because the evaluation of music is a subjective matter, we simply take the avera
 
 The code for this component can be found in src/aggregation.ipynb. 
 
-## Analysis
-We will segment our demographic data after each iteration to see how the population changes from the beginning to the end of this process. Additionally, we will compare the highest rated songs in the iterative process to those in the non-iterative HIT. 
+## Docs
 
 Documents for the flow diagram and the mock up can be found at the following: docs/flow-diagram.pdf, docs/sample_design.png.
 
@@ -92,6 +91,8 @@ The directory magenta-master/magenta/models/performance_rnn/QC_out/mp3_out will 
 The directory magenta-master/magenta/models/performance_rnn/QC_out/ will also contain a csv file called 'filepaths_and_numbers_iterX.csv". This is the file to be passed into the HIT. 
 
 After running the HITs and aggregation, we will get the best music of this iteration, which will be used as the primer for the next iteration. Continue extending the best music iteratively until getting a music of the desired length. 
+
+## Analysis
 
 For analysis, we decided to compare this iterative method with 2 other methods for extending the primer using the same generative model, one with the help of the crowd but no iteration, the other without the help of the crowd. 
 
