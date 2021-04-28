@@ -77,5 +77,5 @@ The code for this component can be found in the simple_aggregation.ipynb.
 ## Analysis
 We will segment our demographic data after each iteration to see how the population changes from the beginning to the end of this process. Additionally, we will compare the highest rated songs in the iterative process to those in the non-iterative HIT. 
 
-Documents for the flow diagram and the mock up can be found at the following: docs/flow-diagram.pdf, docs/mock_up.png.
+Documents for the flow diagram and the mock up can be found at the following: docs/flow-diagram.pdf, docs/sample_design.png.
 
