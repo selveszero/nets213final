@@ -43,15 +43,15 @@ Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: 
 
 This video provides instructions for completing the HIT: https://vimeo.com/542425298
 
-Noteworthy asks students to listen to two music recordings and rate if these recordings should be concatenated. 
+Noteworthy asks students to listen to a music clip and rate its quality and cohesiveness.
 
 Step 1: Please read the instructions at the top of the task
 
-Step 2: Listen to the original music selection, the primer, and the new recording that is appended to the primer by clicking "play". 
+Step 2: Listen to the music by clicking "play". 
 
-Step 3: At the end of the music clip, there will be a short clip that states "Please enter XX into the textbox". Please enter the number, XX, into the textbox below the recording. 
+Step 3: At the end of the music clip, there will be a short voice message saying "Please enter XX into the textbox". Please enter the 2-digit number, XX, into the textbox below. 
 
-Step 4: After listening to this recording, rate how cohesive the new recording and the primer are by selection one of the five options: bad, poor, fair, good, and excellent.
+Step 4: After listening to this recording, rate how good it sounds by selecting one of the five options: bad, poor, fair, good, and excellent.
 
 Step 5: Please fill out the questions regarding your age, gender, and home state. 
 
