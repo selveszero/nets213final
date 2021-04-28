@@ -41,7 +41,7 @@ Drawing conclusions based on the data aggregation on he distribution of the qual
 ## How to Use Noteworthy
 Students must accept the HIT on the Amazon MTurk Worker Sandbox using the link: https://workersandbox.mturk.com/projects/3TCGLRK80L0CG7BRUKYSENZ2INWZQX/tasks?ref=w_pl_prvw.
 
-This video provides instructions for completing the HIT: https://vimeo.com/542406412
+This video provides instructions for completing the HIT: https://vimeo.com/manage/videos/542425298
 
 Noteworthy asks students to listen to two music recordings and rate if these recordings should be concatenated. 
 
