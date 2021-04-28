@@ -67,15 +67,43 @@ In the notebook, 213_prototype_performanceRNN, we instantiate some variables suc
 
 We will create another HIT that contains 30 two-minute songs. 
 
-We will use 10 workers to rate each song for both HITs and take the average as the final rating for the song. In the first HIT, we will have 8 iterations, in which we will take the recordings with the best ratings and append them to the primer. This will serve as the input for the next iteration. Thus, the primer, will grow by 15 seconds for each new iteration. By the final round the song will be (primer_length + 8*15) seconds and we will output the highest-rated song. 
+We will use 10 workers to rate each song for both HITs and take the average as the final rating for the song. In the first HIT, we will have 8 iterations, in which we will take the recordings with the best ratings and append them to the primer. This will serve as the input for the next iteration. Thus the primer will grow by 15 seconds for each new iteration. By the final round the song will be (primer_length + 8*15) seconds and we will output the highest-rated song. 
 
 ## Aggregation: 
 Because the evaluation of music is a subjective matter, we simply take the average rating for each song as its final rating.
 
-The code for this component can be found in the simple_aggregation.ipynb. 
+The code for this component can be found in src/aggregation.ipynb. 
 
 ## Analysis
 We will segment our demographic data after each iteration to see how the population changes from the beginning to the end of this process. Additionally, we will compare the highest rated songs in the iterative process to those in the non-iterative HIT. 
 
 Documents for the flow diagram and the mock up can be found at the following: docs/flow-diagram.pdf, docs/sample_design.png.
+
+## How to run the code
+The code can be found under src. 
+
+To run the code, first save the magenta-master.zip and 213_prototype_performanceRNN.ipynb from src and upload to google drive. 
+Follow the instructions in 213_prototype_performanceRNN.ipynb to generate music from a primer. Also open up the directory magenta-master/magenta/models/performance_rnn in google drive. The primers and the pretrained model are located there. 
+
+The directory magenta-master/magenta/models/performance_rnn/model_out will contain the output generated music (primer + model generated continuation) as midi files. 
+
+The directory magenta-master/magenta/models/performance_rnn/QC_out/mp3_out will contain the final audio outputs (output music + validation message) as mp3 files. Manually upload these files to this github repo, under data/mp3_files/iterX, where X is the iteration number of the current iteration.
+
+The directory magenta-master/magenta/models/performance_rnn/QC_out/ will also contain a csv file called 'filepaths_and_numbers_iterX.csv". This is the file to be passed into the HIT. 
+
+After running the HITs and aggregation, we will get the best music of this iteration, which will be used as the primer for the next iteration. Continue extending the best music iteratively until getting a music of the desired length. 
+
+For analysis, we decided to compare this iterative method with 2 other methods for extending the primer using the same generative model, one with the help of the crowd but no iteration, the other without the help of the crowd. 
+
+Say if we want the final generated music to be 2 minutes long, with a 10s primer and 110s of generated music. 
+
+The iterative method will generate, for example, 15 samples containing 10s after the primer per iteration for 11 iterations, and in each iteration the crowd will select the best sample out of the 15 to be the primer for the next iteration. 
+
+The method with the help of the crowd but no iteration will generate, 15 samples containing 110s after the primer. The crowd will select the best sample out of the 15. 
+
+The last method with no help of the crowd will generate 1 sample containing 110s after the primer directly.
+
+Then, we will use the crowd for a final round of comparison where they rate the best sample of each method, and we expect the iterative method to perform better than the others.
+
+We will also analyze the distribution of self-reported age/gender/location and their effects on worker's rating. 
 
