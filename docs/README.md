@@ -94,7 +94,7 @@ After running the HITs and aggregation, we will get the best music of this itera
 
 ## Analysis
 
-For analysis, we decided to compare this iterative method with 2 other methods for extending the primer using the same generative model, one with the help of the crowd but no iteration, the other without the help of the crowd. 
+For analysis, we will compare this iterative method with 2 other methods for extending the primer using the same generative model, one with the help of the crowd but no iteration, the other without the help of the crowd. 
 
 Say if we want the final generated music to be 2 minutes long, with a 10s primer and 110s of generated music. 
 
