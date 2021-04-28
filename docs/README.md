@@ -2,7 +2,7 @@
 
 ## Finding Generative Models
 
-Difficulty: 1
+Difficulty: 2
 
 Browse online for music generation models and find their code. Try to run their model with the training data and fix potential problems. Run each model to generate enough samples for the next step.
 
@@ -20,7 +20,7 @@ Workers: Limiting workers to the US since we will be using Western music in our 
 
 ## Creating the HIT
 
-Difficulty: 1
+Difficulty: 5
 
 Most of the difficulty of the HIT is in the quality control aspect, the remaining components are simple data collection (1-5 ratings, additional info parameters about the Turker and their music preference, etc.). See mockup for visual example.
 
@@ -34,7 +34,7 @@ Additionally, we will aggregate based on other secondary information we ask from
 
 ## Analysis
 
-Difficulty: 3
+Difficulty: 4
 
 Drawing conclusions based on the data aggregation on he distribution of the quality of music clips and  determine the distribution of worker preference based on the secondary information we gathered. We will create and rate 30 songs produced by the model that are of the same length as the final iterative model and were createwd in one-go. Finally we will compare iteratively generated music with one-go generated music.
 
